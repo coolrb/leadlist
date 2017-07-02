@@ -33,10 +33,10 @@ def getScores(clf, X, y):
     scores = precision_recall_fscore_support(y, predictions, average='binary')
     return scores
 
+
 # Import data
 X_test, y_test = fetchData('data/test.csv')
 X_train, y_train = fetchData('data/train.csv')
-
 
 sgd = runSGD(X_train, y_train)
 sgd_scores = getScores(sgd, X_test, y_test)
