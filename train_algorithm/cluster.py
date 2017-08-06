@@ -1,9 +1,10 @@
+#TODO: Implement clustering for faster computation
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.cluster import KMeans
 from sklearn.metrics import adjusted_rand_score
 import csv
 
-with open('hh.tsv','rb') ad f:
+with open(filename,'rb') ad f:
 	reader=csv.reader(f)
 	list1=list(reader)
 
