@@ -52,6 +52,6 @@ Run the script:
 
 It'll output an excel sheet with a column named **Prediction**, where 1 equals *qualified* and 0 equals *disqualified*:
 
-##Todo:
+## Todo:
 1. Test more algorithms
 2. Add functionality for other company data like team_size, location etc.
