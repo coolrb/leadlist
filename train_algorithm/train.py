@@ -1,4 +1,5 @@
-##@author: hgupta
+// @author: hgupta
+// converting 
 import re
 import cPickle
 import xlrd
@@ -17,6 +18,7 @@ vectorizer = CountVectorizer(
     analyzer='word', max_features=10000, ngram_range=(1, 3)
 )
 tfidf_transformer = TfidfTransformer(norm='l1', use_idf=True)
+
 
 
 def getSheet(name):
@@ -40,7 +42,6 @@ def cleanUp(descriptions):
         clean_descriptions.append(" ".join(meaningful_desc))
         index += 1
     return clean_descriptions
-
 
 def getDescriptionsFromSheet(sheet):
     descriptions = []
